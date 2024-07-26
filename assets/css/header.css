@@ -24,3 +24,11 @@ nav {
     display: flex;
     gap: 20px; /*Khoảng cách item*/
 }
+
+.bar_nav {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
