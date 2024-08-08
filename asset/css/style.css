@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: #212b35;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 1;
+}
+
+.nav .nav_logo {
+    display: inline-block;
+}
+
+.nav p {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.nav .nav-list {
+    display: inline-block;
+    padding-right: 100px;
+}
+
+.nav-list ul {
+    list-style-type: none;
+}
+
+.nav-list ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.header img {
+    /* position: relative; */
+    width: 100%;
+    background-size: cover;
+}
+
+.text-header {
+    /* display: flex; */
+    position: absolute;
+    padding: 0 450px;
+    /* margin-top: 250px; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-header .fullname {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-header .about {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.text-header .social {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.social li {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    background-color: white;
+}
+
+.social li a {
+    color: black;
+    padding: 40px 0px;
+}
+
+.text-header button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: green;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* end header */
+
+/* about */
+    /* .about {
+        display: block;
+        position: absolute;
+    } */
+/* end about */
