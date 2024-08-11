@@ -7,6 +7,10 @@
     font-family: "Oswald", sans-serif;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -14,8 +18,16 @@ a {
 
 ul {
     list-style-type: none;
-    display: flex;
+    /* display: flex; */
     gap: 50px;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
 }
 
 /* start nav */
@@ -48,8 +60,16 @@ ul {
     color: white;
 }
 
+.nav-list ul {
+    display: flex;
+}
+
+.nav-list ul li a {
+    color: white;
+}
+
 .nav-list ul li a:hover {
-    color: black;
+    color: rgb(255, 0, 0);
 }
 
 /* end nav */
@@ -138,27 +158,121 @@ ul li a {
     cursor: pointer;
 }
 
+.social ul {
+    display: flex;
+}
+
 .about {
     width: 100%;
 }
 
-.about .text-about {
+.text-about {
     font-size: 40px;
     text-align: center;
 }
 
-.about .light-about {
+.light-about {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 10px solid green;
 }
 
-.col {
-    flex-direction: column;
+.about .info-about {
+    display: flex;
+    height: 350px;
+    /* background-color: #45b74b; */
+    margin-top: 50px;
 }
 
-.row {
-    flex-direction: row;
+.info-about .information {
+    padding: 10px;
+    padding-right: 50px;
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    font-style: italic;
 }
+.information h1 {
+
+}
+
+.information .list-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.list-info .list-info-left {
+   
+}
+
+.list-info .list-info-right {
+   margin-left: 250px;
+}
+
+
+.info-about .margin-top {
+    margin-top: 10px;
+}
+
+.avatar {
+    width: 310px;
+    height: 310px;
+    background-color: white;
+    margin: 10px;
+    padding: 5px; /* Điều chỉnh padding */
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border-radius: 10px;
+}
+
+.avatar img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá khung */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá khung */
+
+}
+
+.skill {
+    background-color: #212b35;
+    color: white;
+    margin-top: 60px;
+    height: 400px;
+}
+
+.skill-col {
+    position: absolute;
+    display: flex;
+    gap: 90px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.skill-col .col:first-child {
+    margin-left: 40px;
+}
+
+.skill-col .col {
+    /* margin-left: 50px; */
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.col .score-skill {
+    font-size: 50px;
+    font-weight: bold;
+}
+
 /* end header */
